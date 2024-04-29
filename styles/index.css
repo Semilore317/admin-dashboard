@@ -220,7 +220,7 @@ img {
 }
 .grid-wrapper .grid-div {
   background: whitesmoke;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.133);
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.133);
   padding: 0.75rem;
   height: 100%;
   border-radius: 1rem;
@@ -228,8 +228,12 @@ img {
   font-size: 0.7rem;
   position: relative;
 }
+.grid-wrapper .grid-div:hover {
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.385);
+}
 .grid-wrapper .grid-div h3 {
-  margin-bottom: 0.1rem;
+  padding-bottom: 0.4rem;
+  padding-top: 1rem;
 }
 .grid-wrapper .grid-div p {
   padding-top: 1rem;
@@ -243,7 +247,7 @@ img {
 }
 .grid-wrapper .grid-div span {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1.5rem;
   right: 2rem;
   display: flex;
   flex-direction: row;
@@ -257,6 +261,11 @@ img {
   height: 80vh;
   overflow: hidden;
 }
+.grid-flex-wrapper h3 {
+  z-index: 5;
+  margin-top: -1rem;
+  padding-bottom: 1rem;
+}
 .grid-flex-wrapper .grid-wrapper {
   width: 70%;
   height: 70vh;
@@ -265,7 +274,7 @@ img {
 }
 .grid-flex-wrapper .flex-wrapper {
   width: 30%;
-  height: 100%;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -274,16 +283,60 @@ img {
 }
 .grid-flex-wrapper .first-flex-div {
   background: white;
-  padding: 2rem;
+  padding: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.385);
+  height: 45%;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.385);
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+}
+.grid-flex-wrapper .first-flex-div h3 {
+  padding-top: 5px;
+}
+.grid-flex-wrapper .first-flex-div:hover {
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.385);
 }
 .grid-flex-wrapper .first-div-1,
 .grid-flex-wrapper .first-div-2,
-.grid-flex-wrapper .first-div-3 {
+.grid-flex-wrapper .first-div-3,
+.grid-flex-wrapper .first-div-4 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.348);
   padding-bottom: 0.5rem;
+}
+
+.second-flex-div {
+  background: white;
+  padding: 2rem;
+  width: 80%;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 50%;
+  margin-top: -10rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.385);
+  transition: all 0.3s ease;
+}
+.second-flex-div:hover {
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.385);
+}
+.second-flex-div img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: inline;
+}
+.second-flex-div div {
+  height: 70%;
+}
+
+#Trending {
+  position: absolute;
+  top: 63vh;
 }/*# sourceMappingURL=index.css.map */
